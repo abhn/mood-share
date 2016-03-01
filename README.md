@@ -1,5 +1,19 @@
-# MoodShare from Cherrylogs
-    A simple mood-sharing application from the house of Cherrylogs.
+# MoodShare
+Share moods with your friends.
+
+### Installing
+```
+git clone https://github.com/abhn/mood-share.git
+cd mood-share
+```
+edit all routes and change mongo url
+```
+npm install
+nodejs server.js
+```
+If all runs fine, deploy it to a public facing cloud.
+
+## API Documentation
 
 ### POST /register
 * Parameters: ```{ name, username, password }```
@@ -20,10 +34,6 @@
 ### POST /list
 * parameters: ```{ username, password, friend }```
 * Status: 200 with mood list as a JSON object, otherwise as stated
-
-### POST /listone
-* parameters: ```{ username, password, friend }```
-* Status: 200 with mood as a JSON object, otherwise as stated
 
 ### POST /friends
 * parameters: ```{ username, password, friend }```
